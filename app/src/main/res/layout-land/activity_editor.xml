@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.developer.sourav.streetlightapp.EditorActivity">
+
+        <EditText
+            android:id="@+id/edit_location"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="31dp"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/textViewLocation"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_mdn" />
+
+        <EditText
+            android:id="@+id/edit_meter_id"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="28dp"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/textViewMeterId"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_mdn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="35dp"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toRightOf="@+id/textViewMDN"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_modem_id" />
+
+        <TextView
+            android:id="@+id/textViewMeterId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="38dp"
+            android:text="@string/meterId"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_modem_id"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="9dp"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/textViewModemId"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_meter_id" />
+
+        <TextView
+            android:id="@+id/textViewModemId"
+            android:layout_width="96dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/modem_id"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMeterId" />
+
+        <TextView
+            android:id="@+id/textViewMDN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/mdn"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewModemId" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="78dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="59dp"
+            android:text="@string/location"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMDN" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="46dp"
+            android:text="@string/address"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocation"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/textViewAddress"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_location"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
